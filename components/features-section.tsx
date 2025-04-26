@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Wifi, Utensils, Shield, BookOpen, Dumbbell, Users } from "lucide-react"
+import { Wifi, Utensils, Shield, BookOpen, Users } from "lucide-react"
 
 const features = [
   {
@@ -28,12 +28,6 @@ const features = [
     title: "Etüt & Kütüphane",
     description: "Sessiz ve konforlu çalışma alanları ve zengin kütüphane.",
     color: "bg-ihlas-yellow/10 text-ihlas-yellow",
-  },
-  {
-    icon: <Dumbbell className="h-10 w-10" />,
-    title: "Spor Salonu",
-    description: "Modern ekipmanlarla donatılmış spor salonu.",
-    color: "bg-ihlas-green/10 text-ihlas-green",
   },
   {
     icon: <Users className="h-10 w-10" />,

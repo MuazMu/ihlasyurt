@@ -67,21 +67,6 @@ const services = [
     ],
   },
   {
-    id: "spor",
-    title: "Spor Salonu",
-    description: "Fiziksel sağlığınız için modern ekipmanlarla donatılmış spor salonu.",
-    image: "/placeholder.svg?height=600&width=800",
-    features: [
-      "Kardiyo ekipmanları",
-      "Ağırlık istasyonları",
-      "Fitness alanı",
-      "Uzman eğitmenler",
-      "Grup egzersiz programları",
-      "Esnek çalışma saatleri",
-      "Duş ve soyunma odaları",
-    ],
-  },
-  {
     id: "sosyal",
     title: "Sosyal Aktiviteler",
     description: "Kişisel gelişiminizi destekleyen çeşitli etkinlikler düzenliyoruz.",

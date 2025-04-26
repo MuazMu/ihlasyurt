@@ -10,7 +10,7 @@ import { ChevronRight } from "lucide-react"
 const slides = [
   {
     id: 1,
-    title: "İhlas Yurdu'na Hoş Geldiniz",
+    title: "Hüseyin Hakkı Erkek Öğrenci Yurdu'na Hoş Geldiniz",
     description: "Edirne'de eğitim hayatınızda size ev konforu sunan modern yurt",
     image: "/images/building-exterior.jpeg",
   },

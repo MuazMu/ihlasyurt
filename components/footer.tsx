@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -7,11 +8,20 @@ export default function Footer() {
       <div className="container px-4 py-12 md:px-6 md:py-16">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full bg-ihlas-blue text-white flex items-center justify-center">
-                <span className="text-xl font-bold">İY</span>
+            <Link href="/" className="flex items-center gap-3">
+              <div className="relative h-12 w-12 overflow-hidden">
+                <Image
+                  src="/images/logo.png"
+                  alt="Hüseyin Hakkı Erkek Öğrenci Yurdu"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
-              <span className="text-xl font-bold tracking-tight text-ihlas-blue">İhlas Yurdu</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold tracking-tight text-ihlas-blue">HÜSEYİN HAKKI</span>
+                <span className="text-xs text-muted-foreground">ERKEK ÖĞRENCİ YURDU</span>
+              </div>
             </Link>
             <p className="text-sm text-muted-foreground">Eğitim hayatınızda size ev konforu sunan modern yurt.</p>
             <div className="flex space-x-3">
@@ -70,22 +80,6 @@ export default function Footer() {
                   className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
                 >
                   Hizmetlerimiz
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/galeri"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Galeri
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/duyurular"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Duyurular
                 </Link>
               </li>
               <li>
@@ -213,7 +207,7 @@ export default function Footer() {
         <div className="mt-8 border-t pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} İhlas Yurdu. Tüm hakları saklıdır.
+              &copy; {new Date().getFullYear()} Hüseyin Hakkı Erkek Öğrenci Yurdu. Tüm hakları saklıdır.
             </p>
             <p className="text-xs text-muted-foreground">
               <Link href="#" className="hover:underline">

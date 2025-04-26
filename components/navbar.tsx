@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import Image from "next/image"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,19 +33,45 @@ export default function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent",
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white/80 backdrop-blur-md",
       )}
     >
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-10 w-10 overflow-hidden rounded-full bg-ihlas-blue text-white flex items-center justify-center">
-            <span className="text-xl font-bold">İY</span>
+      {/* Top bar with contact info */}
+      <div className="hidden lg:block bg-ihlas-blue text-white py-1">
+        <div className="container flex justify-end items-center px-4 md:px-6">
+          <div className="flex items-center gap-4 text-sm">
+            <div className="flex items-center gap-1">
+              <Phone className="h-3 w-3" />
+              <span>0284 235 25 31</span>
+            </div>
+            <div className="h-4 w-px bg-white/30" />
+            <span>İstasyon, İriş Sk. No:5, Merkez/Edirne</span>
           </div>
-          <span className="text-xl font-bold tracking-tight text-ihlas-blue">İhlas Yurdu</span>
+        </div>
+      </div>
+
+      {/* Main navbar */}
+      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative h-12 w-12 overflow-hidden">
+            <Image
+              src="/images/logo.png"
+              alt="Hüseyin Hakkı Erkek Öğrenci Yurdu"
+              width={48}
+              height={48}
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold tracking-tight text-ihlas-blue">HÜSEYİN HAKKI</span>
+            <span className="text-xs text-muted-foreground">ERKEK ÖĞRENCİ YURDU</span>
+          </div>
         </Link>
-        <div className="hidden md:flex">
-          <NavigationMenu>
-            <NavigationMenuList>
+
+        <div className="hidden md:flex flex-1 justify-center">
+          <NavigationMenu className="mx-auto">
+            <NavigationMenuList className="gap-1">
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>Ana Sayfa</NavigationMenuLink>
@@ -99,11 +126,6 @@ export default function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/duyurular" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>Duyurular</NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
                 <Link href="/iletisim" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>İletişim</NavigationMenuLink>
                 </Link>
@@ -111,13 +133,15 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="hidden md:flex">
+
+        <div className="hidden md:flex items-center gap-4">
           <Link href="/basvuru" passHref>
             <Button className="bg-gradient-to-r from-ihlas-blue to-ihlas-teal text-white hover:opacity-90 transition-all duration-300 hover:scale-105">
               Başvuru Yap
             </Button>
           </Link>
         </div>
+
         <button
           className="flex items-center justify-center rounded-md p-2 text-ihlas-blue md:hidden"
           onClick={() => setIsOpen(!isOpen)}
@@ -126,6 +150,7 @@ export default function Navbar() {
           <span className="sr-only">Menüyü Aç/Kapat</span>
         </button>
       </div>
+
       {isOpen && (
         <div className="fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur-sm md:hidden">
           <nav className="container flex flex-col gap-6 p-6">
@@ -179,13 +204,6 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <Link
-              href="/duyurular"
-              className="text-lg font-medium transition-colors hover:text-ihlas-blue"
-              onClick={() => setIsOpen(false)}
-            >
-              Duyurular
-            </Link>
             <Link
               href="/iletisim"
               className="text-lg font-medium transition-colors hover:text-ihlas-blue"
