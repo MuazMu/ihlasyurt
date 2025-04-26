@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white shadow-sm">
       {/* Top bar with contact info */}
       <div className="hidden lg:block bg-ihlas-blue text-white py-1">
         <div className="container flex justify-end items-center px-4 md:px-6">
@@ -146,7 +146,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 top-16 z-50 bg-white/95 backdrop-blur-md shadow-sm md:hidden">
+        <div className="fixed inset-0 top-16 z-50 bg-white shadow-md md:hidden">
           <nav className="container flex flex-col gap-6 p-6">
             <Link
               href="/"
