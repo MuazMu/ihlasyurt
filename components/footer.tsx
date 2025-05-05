@@ -1,221 +1,71 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
-import Image from "next/image"
+import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-ihlas-blue/10 via-ihlas-teal/10 to-ihlas-blue/10 border-t">
-      <div className="container px-4 py-12 md:px-6 md:py-16">
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="relative h-12 w-12 overflow-hidden">
-                <Image
-                  src="/images/logo.png"
-                  alt="Hüseyin Hakkı Erkek Öğrenci Yurdu"
-                  width={48}
-                  height={48}
-                  className="object-contain"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-ihlas-blue">HÜSEYİN HAKKI</span>
-                <span className="text-xs text-muted-foreground">ERKEK ÖĞRENCİ YURDU</span>
-              </div>
-            </Link>
-            <p className="text-sm text-muted-foreground">Eğitim hayatınızda size ev konforu sunan modern yurt.</p>
-            <div className="flex space-x-3">
-              <Link
-                href="#"
-                className="rounded-full bg-ihlas-blue/10 p-2 text-ihlas-blue hover:bg-ihlas-blue hover:text-white transition-colors"
-              >
-                <Facebook className="h-4 w-4" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                href="#"
-                className="rounded-full bg-ihlas-blue/10 p-2 text-ihlas-blue hover:bg-ihlas-blue hover:text-white transition-colors"
-              >
-                <Twitter className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="#"
-                className="rounded-full bg-ihlas-blue/10 p-2 text-ihlas-blue hover:bg-ihlas-blue hover:text-white transition-colors"
-              >
-                <Instagram className="h-4 w-4" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link
-                href="#"
-                className="rounded-full bg-ihlas-blue/10 p-2 text-ihlas-blue hover:bg-ihlas-blue hover:text-white transition-colors"
-              >
-                <Youtube className="h-4 w-4" />
-                <span className="sr-only">YouTube</span>
-              </Link>
-            </div>
+    <footer className="bg-gray-800 text-white">
+      <div className="max-w-7xl mx-auto py-12 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-xl font-bold mb-4">Ihlas Yurdu</h3>
+            <p className="mb-4">
+              Providing comfortable accommodation and excellent facilities for students in a peaceful environment.
+            </p>
+            <div className="flex space-x-4">{/* Social media icons would go here */}</div>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-ihlas-blue">Hızlı Erişim</h3>
-            <ul className="space-y-2 text-sm">
+
+          <div>
+            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
               <li>
-                <Link
-                  href="/"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Ana Sayfa
+                <Link href="#" className="hover:text-emerald-400 transition">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/hakkimizda"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Hakkımızda
+                <Link href="#" className="hover:text-emerald-400 transition">
+                  Accommodation
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/hizmetler"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Hizmetlerimiz
+                <Link href="#" className="hover:text-emerald-400 transition">
+                  Facilities
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/iletisim"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  İletişim
+                <Link href="#" className="hover:text-emerald-400 transition">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-emerald-400 transition">
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-ihlas-blue">Hizmetlerimiz</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/hizmetler/konaklama"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Konaklama
-                </Link>
+
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Information</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <MapPin className="w-5 h-5 mr-2 text-emerald-400" />
+                <span>123 University Street, City, Country</span>
               </li>
-              <li>
-                <Link
-                  href="/hizmetler/yemek"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Yemek
-                </Link>
+              <li className="flex items-center">
+                <Phone className="w-5 h-5 mr-2 text-emerald-400" />
+                <span>+1 234 567 890</span>
               </li>
-              <li>
-                <Link
-                  href="/hizmetler/guvenlik"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Güvenlik
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hizmetler/etut-kutuphane"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Etüt & Kütüphane
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hizmetler/spor"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Spor Salonu
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hizmetler/sosyal"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Sosyal Aktiviteler
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold text-ihlas-blue">Yasal</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/gizlilik-politikasi"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Gizlilik Politikası
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/kullanim-sartlari"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Kullanım Şartları
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/cerez-politikasi"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  Çerez Politikası
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/kvkk"
-                  className="text-muted-foreground hover:text-ihlas-blue hover:underline transition-colors"
-                >
-                  KVKK
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4 sm:col-span-2 md:col-span-1">
-            <h3 className="text-lg font-bold text-ihlas-blue">İletişim</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-4 w-4 text-ihlas-blue" />
-                <span className="text-muted-foreground">İstasyon, İriş Sk. No:5, 22100 Merkez/Edirne</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 text-ihlas-blue" />
-                <div className="flex flex-col">
-                  <span className="text-muted-foreground">0284 235 25 31</span>
-                  <span className="text-muted-foreground">0546 421 26 51</span>
-                  <span className="text-muted-foreground">0552 202 06 49</span>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <Mail className="mt-0.5 h-4 w-4 text-ihlas-blue" />
-                <span className="text-muted-foreground">edirne@yurdu.net</span>
+              <li className="flex items-center">
+                <Mail className="w-5 h-5 mr-2 text-emerald-400" />
+                <span>info@ihlasyurdu.com</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t pt-8">
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Hüseyin Hakkı Erkek Öğrenci Yurdu. Tüm hakları saklıdır.
-            </p>
-            <p className="text-xs text-muted-foreground">
-              <Link href="#" className="hover:underline">
-                Web Tasarım
-              </Link>{" "}
-              tarafından geliştirilmiştir.
-            </p>
-          </div>
+
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p>&copy; {new Date().getFullYear()} Ihlas Yurdu. All rights reserved.</p>
         </div>
       </div>
     </footer>
