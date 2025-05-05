@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import type { ReactNode } from "react"
 
 interface FacilitySectionProps {
@@ -32,9 +33,12 @@ export default function FacilitySection({ title, description, imageSrc, icon, re
               <h2 className="text-3xl font-bold ml-3">{title}</h2>
             </div>
             <p className="text-lg text-gray-600 mb-6">{description}</p>
-            <button className="bg-teal-600 text-white px-6 py-2 rounded-md font-medium hover:bg-teal-700 transition">
+            <Link
+              href="/hizmetlerimiz"
+              className="bg-teal-600 text-white px-6 py-2 rounded-md font-medium hover:bg-teal-700 transition inline-block"
+            >
               Detayları Gör
-            </button>
+            </Link>
           </div>
         </div>
       </div>

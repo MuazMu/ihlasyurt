@@ -4,11 +4,12 @@ import Footer from "@/components/footer"
 import RoomCard from "@/components/room-card"
 import FacilitySection from "@/components/facility-section"
 import HeroCarousel from "@/components/hero-carousel"
+import Link from "next/link"
 
 export default function HomePage() {
   const heroSlides = [
     {
-      image: "/images/yurt-new.jpeg",
+      image: "/images/yurt1.jpeg",
       title: "İhlas Yurdu",
       description: "Evinizden uzakta eviniz",
     },
@@ -76,7 +77,7 @@ export default function HomePage() {
             <RoomCard
               title="Tek Kişilik Oda"
               description="Mahremiyet ve sessiz bir çalışma ortamı tercih eden öğrenciler için idealdir."
-              imageSrc="/images/pic7.jpeg"
+              imageSrc="/images/1kisilik-oda.jpeg"
               icon={<User className="w-5 h-5" />}
             />
 
@@ -153,18 +154,18 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
+            <Link
               href="/on-kayit"
               className="bg-teal-600 text-white px-8 py-3 rounded-md font-medium hover:bg-teal-700 transition"
             >
               Ön Kayıt
-            </a>
-            <a
+            </Link>
+            <Link
               href="/iletisim"
               className="border border-teal-600 text-teal-600 px-8 py-3 rounded-md font-medium hover:bg-teal-50 transition"
             >
               İletişim
-            </a>
+            </Link>
           </div>
         </div>
       </section>

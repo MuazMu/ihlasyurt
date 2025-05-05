@@ -4,8 +4,8 @@ import Footer from "@/components/footer"
 
 export default function Gallery() {
   const images = [
-    { src: "/images/yurt-new.jpeg", alt: "Yurt Binası", title: "İhlas Yurdu" },
-    { src: "/images/pic7.jpeg", alt: "Tek Kişilik Oda", title: "Tek Kişilik Oda" },
+    { src: "/images/yurt1.jpeg", alt: "Yurt Binası", title: "İhlas Yurdu" },
+    { src: "/images/1kisilik-oda.jpeg", alt: "Tek Kişilik Oda", title: "Tek Kişilik Oda" },
     { src: "/images/pic2.jpeg", alt: "Üç Kişilik Oda", title: "Üç Kişilik Oda" },
     { src: "/images/pic3.jpeg", alt: "Dört Kişilik Oda", title: "Dört Kişilik Oda (Alternatif)" },
     { src: "/images/4-kisilik-oda.jpeg", alt: "Dört Kişilik Oda", title: "Dört Kişilik Oda" },

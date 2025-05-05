@@ -162,7 +162,7 @@ export default function Hizmetlerimiz() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/pic7.jpeg"
+                  src="/images/1kisilik-oda.jpeg"
                   alt="Tek Kişilik Oda"
                   fill
                   className="object-cover"

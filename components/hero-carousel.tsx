@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface Slide {
   image: string
@@ -17,21 +16,13 @@ interface HeroCarouselProps {
 export default function HeroCarousel({ slides }: HeroCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
-  }
-
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide()
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [slides.length])
 
   return (
     <section className="relative h-[80vh] w-full">
@@ -59,33 +50,6 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
           </div>
         </div>
       ))}
-
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="h-6 w-6" />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="h-6 w-6" />
-      </button>
-
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? "bg-white" : "bg-white/50"}`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
     </section>
   )
 }

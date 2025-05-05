@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import type { ReactNode } from "react"
 
 interface RoomCardProps {
@@ -26,7 +27,10 @@ export default function RoomCard({ title, description, imageSrc, icon }: RoomCar
           <h3 className="text-xl font-semibold">{title}</h3>
         </div>
         <p className="text-gray-600">{description}</p>
-        <button className="mt-4 text-teal-600 font-medium hover:text-teal-700 transition flex items-center">
+        <Link
+          href="/hizmetlerimiz"
+          className="mt-4 text-teal-600 font-medium hover:text-teal-700 transition flex items-center"
+        >
           Daha fazla bilgi
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
             <path
@@ -35,7 +39,7 @@ export default function RoomCard({ title, description, imageSrc, icon }: RoomCar
               clipRule="evenodd"
             />
           </svg>
-        </button>
+        </Link>
       </div>
     </div>
   )
