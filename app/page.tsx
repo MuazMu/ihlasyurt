@@ -1,63 +1,68 @@
-import Image from "next/image"
-import { ChurchIcon as Mosque, Book, Utensils, Users, User } from "lucide-react"
+import { ChurchIcon, BookOpen, Utensils, Users, User, Home, Phone, MapPin, Bath } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import RoomCard from "@/components/room-card"
 import FacilitySection from "@/components/facility-section"
+import HeroCarousel from "@/components/hero-carousel"
 
-export default function Home() {
+export default function HomePage() {
+  const heroSlides = [
+    {
+      image: "/images/yurt-new.jpeg",
+      title: "İhlas Yurdu",
+      description: "Evinizden uzakta eviniz",
+    },
+    {
+      image: "/images/pic3.jpeg",
+      title: "Konforlu Odalar",
+      description: "Rahat ve huzurlu bir ortamda konaklama",
+    },
+    {
+      image: "/images/oturma-salon-2.jpeg",
+      title: "Sosyal Ortam",
+      description: "Arkadaşlarınızla keyifli vakit geçirebileceğiniz alanlar",
+    },
+  ]
+
   return (
     <main className="min-h-screen bg-gray-50">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative h-[60vh] w-full">
-        <Image
-          src="/images/entrance.png"
-          alt="Ihlas Yurdu Entrance"
-          fill
-          priority
-          className="object-cover brightness-75"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">Ihlas Yurdu</h1>
-          <p className="text-xl md:text-2xl text-center max-w-3xl px-4">Your comfortable home away from home</p>
-        </div>
-      </section>
+      {/* Hero Carousel Section */}
+      <HeroCarousel slides={heroSlides} />
 
       {/* About Section */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Welcome to Ihlas Yurdu</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">İhlas Yurdu'na Hoş Geldiniz</h2>
         <p className="text-lg text-center max-w-3xl mx-auto mb-8">
-          Ihlas Yurdu provides comfortable accommodation and excellent facilities for students in a peaceful
-          environment. Our dormitory offers various room types, study spaces, dining facilities, and prayer rooms to
-          meet all your needs.
+          İhlas Yurdu, öğrencilere huzurlu bir ortamda konforlu konaklama ve mükemmel tesisler sunmaktadır. Yurdumuz,
+          tüm ihtiyaçlarınızı karşılamak için çeşitli oda tipleri, çalışma alanları, yemek tesisleri ve ibadet odaları
+          sunmaktadır.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="flex justify-center mb-4">
-              <Home className="w-12 h-12 text-emerald-600" />
+              <Home className="w-12 h-12 text-teal-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Comfortable Rooms</h3>
-            <p>Choose from single, double, or triple occupancy rooms, all designed for comfort and study.</p>
+            <h3 className="text-xl font-semibold mb-2">Konforlu Odalar</h3>
+            <p>Tek, üç veya dört kişilik odalardan seçim yapın, hepsi konfor ve çalışma için tasarlanmıştır.</p>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="flex justify-center mb-4">
-              <Book className="w-12 h-12 text-emerald-600" />
+              <BookOpen className="w-12 h-12 text-teal-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Study Facilities</h3>
-            <p>Multiple libraries and study rooms equipped with everything you need for academic success.</p>
+            <h3 className="text-xl font-semibold mb-2">Çalışma İmkanları</h3>
+            <p>Akademik başarınız için gereken her şeyle donatılmış çoklu kütüphaneler ve çalışma odaları.</p>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="flex justify-center mb-4">
-              <Mosque className="w-12 h-12 text-emerald-600" />
+              <ChurchIcon className="w-12 h-12 text-teal-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Prayer Room</h3>
-            <p>A dedicated mosque for daily prayers in a peaceful and spiritual environment.</p>
+            <h3 className="text-xl font-semibold mb-2">Mescit</h3>
+            <p>Huzurlu ve manevi bir ortamda günlük ibadetler için özel mescit.</p>
           </div>
         </div>
       </section>
@@ -65,27 +70,27 @@ export default function Home() {
       {/* Accommodation Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Accommodation Options</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Konaklama Seçenekleri</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <RoomCard
-              title="Single Room"
-              description="Perfect for students who prefer privacy and a quiet environment for studying."
-              imageSrc="/images/single-room.png"
+              title="Tek Kişilik Oda"
+              description="Mahremiyet ve sessiz bir çalışma ortamı tercih eden öğrenciler için idealdir."
+              imageSrc="/images/pic7.jpeg"
               icon={<User className="w-5 h-5" />}
             />
 
             <RoomCard
-              title="Double Room"
-              description="Shared accommodation for two students with all necessary amenities."
-              imageSrc="/images/double-room.png"
+              title="Üç Kişilik Oda"
+              description="Üç öğrenci için rahat yataklar ve çalışma alanı ile ekonomik seçenek."
+              imageSrc="/images/pic2.jpeg"
               icon={<Users className="w-5 h-5" />}
             />
 
             <RoomCard
-              title="Triple Room"
-              description="Economical option for three students with comfortable beds and study space."
-              imageSrc="/images/triple-room.png"
+              title="Dört Kişilik Oda"
+              description="Dört öğrenci için geniş ve konforlu bir ortam sunan en ekonomik seçenek."
+              imageSrc="/images/4-kisilik-oda.jpeg"
               icon={<Users className="w-5 h-5" />}
             />
           </div>
@@ -94,47 +99,73 @@ export default function Home() {
 
       {/* Facilities Section */}
       <FacilitySection
-        title="Mosque"
-        description="Our dedicated prayer room provides a peaceful environment for daily prayers. The mosque is equipped with proper prayer mats and has separate areas for men and women."
+        title="Mescit"
+        description="Özel mescidimiz, günlük ibadetler için huzurlu bir ortam sağlar. Mescit, uygun seccadelerle donatılmıştır ve erkekler için ayrı alanlar bulunmaktadır."
         imageSrc="/images/mosque.png"
-        icon={<Mosque className="w-6 h-6 text-emerald-600" />}
+        icon={<ChurchIcon className="w-6 h-6 text-teal-600" />}
         reverse={false}
       />
 
       <FacilitySection
-        title="Dining Hall"
-        description="Our spacious dining hall serves nutritious meals three times a day. The menu is varied and caters to different dietary requirements."
+        title="Yemekhane"
+        description="Geniş yemekhanemiz günde üç öğün besleyici yemekler sunmaktadır. Menü çeşitlidir ve farklı diyet gereksinimlerine uygun seçenekler içerir."
         imageSrc="/images/dining-hall.png"
-        icon={<Utensils className="w-6 h-6 text-emerald-600" />}
+        icon={<Utensils className="w-6 h-6 text-teal-600" />}
         reverse={true}
       />
 
       <FacilitySection
-        title="Library & Study Rooms"
-        description="Multiple study spaces and libraries are available for students to study individually or in groups. All study areas are equipped with comfortable seating and proper lighting."
-        imageSrc="/images/library.png"
-        icon={<Book className="w-6 h-6 text-emerald-600" />}
+        title="Kütüphane ve Çalışma Odaları"
+        description="Öğrencilerin bireysel veya grup halinde çalışabilmeleri için çoklu çalışma alanları ve kütüphaneler mevcuttur. Tüm çalışma alanları rahat oturma yerleri ve uygun aydınlatma ile donatılmıştır."
+        imageSrc="/images/kutuphane3.jpeg"
+        icon={<BookOpen className="w-6 h-6 text-teal-600" />}
         reverse={false}
       />
 
       <FacilitySection
-        title="Common Areas"
-        description="Relax and socialize in our comfortable common areas. These spaces are perfect for unwinding after a long day of studies."
-        imageSrc="/images/common-area.png"
-        icon={<Users className="w-6 h-6 text-emerald-600" />}
+        title="Ortak Alanlar"
+        description="Konforlu ortak alanlarımızda rahatlayın ve sosyalleşin. Bu alanlar, uzun bir çalışma gününün ardından dinlenmek için idealdir."
+        imageSrc="/images/oturma-salon-2.jpeg"
+        icon={<Users className="w-6 h-6 text-teal-600" />}
         reverse={true}
+      />
+
+      <FacilitySection
+        title="Banyo ve Tuvalet"
+        description="Her katta temiz ve modern banyo ve tuvalet alanları bulunmaktadır. Düzenli olarak temizlenen bu alanlar, öğrencilerimizin hijyen ihtiyaçlarını karşılamaktadır."
+        imageSrc="/images/toilets.jpeg"
+        icon={<Bath className="w-6 h-6 text-teal-600" />}
+        reverse={false}
       />
 
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-emerald-50">
+      <section className="py-16 px-4 bg-teal-50">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
-          <p className="text-lg mb-8">
-            Interested in staying at Ihlas Yurdu? Contact us for more information or to schedule a visit.
-          </p>
-          <button className="bg-emerald-600 text-white px-8 py-3 rounded-md font-medium hover:bg-emerald-700 transition">
-            Get in Touch
-          </button>
+          <h2 className="text-3xl font-bold mb-8">Bize Ulaşın</h2>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+            <div className="flex items-center">
+              <MapPin className="w-6 h-6 mr-2 text-teal-600" />
+              <span>İstasyon, İriş Sk. No:5, 22100 Merkez/Edirne</span>
+            </div>
+            <div className="flex items-center">
+              <Phone className="w-6 h-6 mr-2 text-teal-600" />
+              <span>0284 235 25 31</span>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="/on-kayit"
+              className="bg-teal-600 text-white px-8 py-3 rounded-md font-medium hover:bg-teal-700 transition"
+            >
+              Ön Kayıt
+            </a>
+            <a
+              href="/iletisim"
+              className="border border-teal-600 text-teal-600 px-8 py-3 rounded-md font-medium hover:bg-teal-50 transition"
+            >
+              İletişim
+            </a>
+          </div>
         </div>
       </section>
 

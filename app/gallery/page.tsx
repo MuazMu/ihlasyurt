@@ -4,15 +4,16 @@ import Footer from "@/components/footer"
 
 export default function Gallery() {
   const images = [
-    { src: "/images/entrance.png", alt: "Entrance", title: "Main Entrance" },
-    { src: "/images/single-room.png", alt: "Single Room", title: "Single Room" },
-    { src: "/images/triple-room.png", alt: "Triple Room", title: "Triple Room" },
-    { src: "/images/mosque.png", alt: "Mosque", title: "Prayer Room" },
-    { src: "/images/dining-hall.png", alt: "Dining Hall", title: "Dining Hall" },
-    { src: "/images/library.png", alt: "Library", title: "Library" },
-    { src: "/images/common-area.png", alt: "Common Area", title: "Common Area" },
-    { src: "/images/study-room.png", alt: "Study Room", title: "Study Room" },
-    { src: "/images/study-area.png", alt: "Study Area", title: "Study Area" },
+    { src: "/images/yurt-new.jpeg", alt: "Yurt Binası", title: "İhlas Yurdu" },
+    { src: "/images/pic7.jpeg", alt: "Tek Kişilik Oda", title: "Tek Kişilik Oda" },
+    { src: "/images/pic2.jpeg", alt: "Üç Kişilik Oda", title: "Üç Kişilik Oda" },
+    { src: "/images/pic3.jpeg", alt: "Dört Kişilik Oda", title: "Dört Kişilik Oda (Alternatif)" },
+    { src: "/images/4-kisilik-oda.jpeg", alt: "Dört Kişilik Oda", title: "Dört Kişilik Oda" },
+    { src: "/images/mosque.png", alt: "Mescit", title: "Mescit" },
+    { src: "/images/dining-hall.png", alt: "Yemekhane", title: "Yemekhane" },
+    { src: "/images/kutuphane3.jpeg", alt: "Kütüphane", title: "Kütüphane" },
+    { src: "/images/oturma-salon-2.jpeg", alt: "Ortak Alan", title: "Ortak Alan" },
+    { src: "/images/toilets.jpeg", alt: "Banyo ve Tuvalet", title: "Banyo ve Tuvalet" },
   ]
 
   return (
@@ -21,7 +22,7 @@ export default function Gallery() {
 
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-12">Gallery</h1>
+          <h1 className="text-4xl font-bold text-center mb-12">Galeri</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((image, index) => (
