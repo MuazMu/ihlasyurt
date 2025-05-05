@@ -3,6 +3,10 @@ import Footer from "@/components/footer"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function Iletisim() {
+  // Encode the address for the Google Maps URL
+  const address = encodeURIComponent("İstasyon, İriş Sk. No:5, 22100 Edirne Merkez/Edirne")
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.5741271893297!2d26.5508!3d41.6777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b32f9c1a771fab%3A0x7e0a3a5f5a3c1c0!2s${address}!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus`
+
   return (
     <main className="min-h-screen bg-gray-50">
       <Navbar />
@@ -52,7 +56,7 @@ export default function Iletisim() {
 
               <div className="aspect-video w-full rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.5741271893297!2d26.55089!3d41.6777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b32f9c1a771fab%3A0x7e0a3a5f5a3c1c0!2sEdirne%2C%20Turkey!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.5741271893297!2d26.55089!3d41.6777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b32f9c1a771fab%3A0x7e0a3a5f5a3c1c0!2s%C4%B0stasyon%2C%20%C4%B0ri%C5%9F%20Sk.%20No%3A5%2C%2022100%20Edirne%20Merkez%2FEdirne!5e0!3m2!1sen!2str!4v1620000000000!5m2!1sen!2str"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

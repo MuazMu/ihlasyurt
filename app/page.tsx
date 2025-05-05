@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function HomePage() {
   const heroSlides = [
     {
-      image: "/images/yurt1.jpeg",
+      image: "/images/yurt3.jpeg",
       title: "İhlas Yurdu",
       description: "Evinizden uzakta eviniz",
     },
