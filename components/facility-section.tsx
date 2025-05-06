@@ -35,7 +35,7 @@ export default function FacilitySection({ title, description, imageSrc, icon, re
             <p className="text-lg text-gray-600 mb-6">{description}</p>
             <Link
               href="/hizmetlerimiz"
-              className="bg-teal-600 text-white px-6 py-2 rounded-md font-medium hover:bg-teal-700 transition inline-block"
+              className="bg-blue-700 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-800 transition inline-block"
             >
               Detayları Gör
             </Link>

@@ -14,8 +14,8 @@ export default function Hizmetlerimiz() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <Wifi className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <Wifi className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Ücretsiz Wi-Fi</h3>
               <p className="text-gray-600">
@@ -25,8 +25,8 @@ export default function Hizmetlerimiz() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <Utensils className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <Utensils className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Yemek Hizmeti</h3>
               <p className="text-gray-600">
@@ -36,8 +36,8 @@ export default function Hizmetlerimiz() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <ShieldCheck className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <ShieldCheck className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">24 Saat Güvenlik</h3>
               <p className="text-gray-600">
@@ -47,8 +47,8 @@ export default function Hizmetlerimiz() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <BookOpen className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <BookOpen className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Kütüphane ve Çalışma Salonları</h3>
               <p className="text-gray-600">
@@ -58,8 +58,8 @@ export default function Hizmetlerimiz() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <Shirt className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <Shirt className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Çamaşır Hizmeti</h3>
               <p className="text-gray-600">
@@ -69,8 +69,8 @@ export default function Hizmetlerimiz() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-teal-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <Bath className="w-8 h-8 text-teal-600" />
+              <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <Bath className="w-8 h-8 text-blue-700" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Banyo ve Tuvalet</h3>
               <p className="text-gray-600">

@@ -23,13 +23,13 @@ export default function RoomCard({ title, description, imageSrc, icon }: RoomCar
       </div>
       <div className="p-6">
         <div className="flex items-center mb-3">
-          <div className="bg-teal-100 p-2 rounded-full mr-3">{icon}</div>
+          <div className="bg-blue-100 p-2 rounded-full mr-3">{icon}</div>
           <h3 className="text-xl font-semibold">{title}</h3>
         </div>
         <p className="text-gray-600">{description}</p>
         <Link
           href="/hizmetlerimiz"
-          className="mt-4 text-teal-600 font-medium hover:text-teal-700 transition flex items-center"
+          className="mt-4 text-blue-700 font-medium hover:text-blue-800 transition flex items-center"
         >
           Daha fazla bilgi
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">

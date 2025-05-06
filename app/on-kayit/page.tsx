@@ -24,7 +24,7 @@ export default function OnKayit() {
                   id="firstName"
                   name="firstName"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
@@ -37,7 +37,7 @@ export default function OnKayit() {
                   id="lastName"
                   name="lastName"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function OnKayit() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -64,7 +64,7 @@ export default function OnKayit() {
                 id="phone"
                 name="phone"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -77,7 +77,7 @@ export default function OnKayit() {
                 id="university"
                 name="university"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -89,7 +89,7 @@ export default function OnKayit() {
                 id="roomType"
                 name="roomType"
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Seçiniz</option>
                 <option value="single">Tek Kişilik Oda</option>
@@ -106,7 +106,7 @@ export default function OnKayit() {
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 
@@ -116,7 +116,7 @@ export default function OnKayit() {
                 id="terms"
                 name="terms"
                 required
-                className="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
+                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
               />
               <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
                 Kişisel verilerimin işlenmesine izin veriyorum*
@@ -126,7 +126,7 @@ export default function OnKayit() {
             <div>
               <button
                 type="submit"
-                className="w-full bg-teal-600 text-white py-3 px-4 rounded-md font-medium hover:bg-teal-700 transition"
+                className="w-full bg-blue-700 text-white py-3 px-4 rounded-md font-medium hover:bg-blue-800 transition"
               >
                 Ön Kayıt Yap
               </button>

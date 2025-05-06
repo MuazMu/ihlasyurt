@@ -31,7 +31,7 @@ export default function Hakkimizda() {
             </div>
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/images/entrance.png"
+                src="/images/yurt3.jpeg"
                 alt="İhlas Yurdu"
                 fill
                 className="object-cover"
@@ -45,7 +45,7 @@ export default function Hakkimizda() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-teal-600">Misyonumuz</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-700">Misyonumuz</h3>
                 <p className="text-gray-600">
                   Öğrencilerimize güvenli, huzurlu ve akademik başarılarını destekleyecek bir ortam sunmak, manevi
                   değerlerine sahip çıkarak kişisel gelişimlerine katkı sağlamak ve topluma faydalı bireyler
@@ -54,7 +54,7 @@ export default function Hakkimizda() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-teal-600">Vizyonumuz</h3>
+                <h3 className="text-xl font-semibold mb-4 text-blue-700">Vizyonumuz</h3>
                 <p className="text-gray-600">
                   Öğrencilerin akademik, sosyal ve manevi gelişimlerini en üst düzeyde destekleyen, modern ve konforlu
                   yaşam alanları sunan, alanında öncü ve örnek bir öğrenci yurdu olmaktır.
@@ -68,7 +68,7 @@ export default function Hakkimizda() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Merkezi Konum</h3>
                   <p className="text-gray-600">
@@ -78,17 +78,17 @@ export default function Hakkimizda() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Modern ve Konforlu Odalar</h3>
                   <p className="text-gray-600">
-                    Tek, iki ve üç kişilik odalarımız modern mobilyalar ve özel çalışma alanları ile donatılmıştır.
+                    Tek, üç ve dört kişilik odalarımız modern mobilyalar ve özel çalışma alanları ile donatılmıştır.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Güvenli Ortam</h3>
                   <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function Hakkimizda() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Besleyici Yemekler</h3>
                   <p className="text-gray-600">
@@ -108,7 +108,7 @@ export default function Hakkimizda() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Çalışma Ortamı</h3>
                   <p className="text-gray-600">
@@ -118,7 +118,7 @@ export default function Hakkimizda() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-teal-600 mr-3 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Manevi Ortam</h3>
                   <p className="text-gray-600">
