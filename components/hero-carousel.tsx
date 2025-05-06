@@ -39,7 +39,7 @@ export default function HeroCarousel({ slides }: HeroCarouselProps) {
               alt={slide.title}
               fill
               priority
-              className="object-cover object-center"
+              className={`object-cover ${index === 0 ? "object-top" : "object-center"}`}
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-black/40" />

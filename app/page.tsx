@@ -1,4 +1,5 @@
-import { ChurchIcon, BookOpen, Utensils, Users, User, Home, Phone, MapPin, Bath } from "lucide-react"
+import { BookOpen, Utensils, Users, User, Home, Phone, MapPin, Bath } from "lucide-react"
+import { MosqueIcon } from "@/components/mosque-icon"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import RoomCard from "@/components/room-card"
@@ -9,7 +10,7 @@ import Link from "next/link"
 export default function HomePage() {
   const heroSlides = [
     {
-      image: "/images/yurt3.jpeg",
+      image: "/images/entrance-group.jpeg",
       title: "İhlas Yurdu",
       description: "Evinizden uzakta eviniz",
     },
@@ -60,7 +61,7 @@ export default function HomePage() {
 
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="flex justify-center mb-4">
-              <ChurchIcon className="w-12 h-12 text-blue-700" />
+              <MosqueIcon className="w-12 h-12" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Mescit</h3>
             <p>Huzurlu ve manevi bir ortamda günlük ibadetler için özel mescit.</p>
@@ -103,7 +104,7 @@ export default function HomePage() {
         title="Mescit"
         description="Özel mescidimiz, günlük ibadetler için huzurlu bir ortam sağlar. Mescit, uygun seccadelerle donatılmıştır ve erkekler için ayrı alanlar bulunmaktadır."
         imageSrc="/images/mosque.png"
-        icon={<ChurchIcon className="w-6 h-6 text-blue-700" />}
+        icon={<MosqueIcon className="w-6 h-6" />}
         reverse={false}
       />
 

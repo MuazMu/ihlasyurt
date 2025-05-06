@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Wifi, Utensils, ShieldCheck, BookOpen, Shirt, Bath } from "lucide-react"
+import { Wifi, Utensils, ShieldCheck, BookOpen, Shirt } from "lucide-react"
+import { MosqueIcon } from "@/components/mosque-icon"
 
 export default function Hizmetlerimiz() {
   return (
@@ -70,12 +71,12 @@ export default function Hizmetlerimiz() {
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="bg-blue-100 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
-                <Bath className="w-8 h-8 text-blue-700" />
+                <MosqueIcon className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Banyo ve Tuvalet</h3>
+              <h3 className="text-xl font-semibold mb-3">Mescit</h3>
               <p className="text-gray-600">
-                Her katta temiz ve modern banyo ve tuvalet alanları bulunmaktadır. Düzenli olarak temizlenen bu alanlar,
-                öğrencilerimizin hijyen ihtiyaçlarını karşılamaktadır.
+                Öğrencilerimizin manevi gelişimlerine katkı sağlamak için yurdumuzda mescit bulunmaktadır. Mescidimiz
+                günlük ibadetler için huzurlu bir ortam sağlamaktadır.
               </p>
             </div>
           </div>
@@ -119,7 +120,7 @@ export default function Hizmetlerimiz() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md mb-4">
                   <Image
@@ -140,7 +141,7 @@ export default function Hizmetlerimiz() {
               <div>
                 <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md mb-4">
                   <Image
-                    src="/images/oturma-salon-2.jpeg"
+                    src="/images/oturma-salon.jpeg"
                     alt="Ortak Alan"
                     fill
                     className="object-cover"
@@ -151,6 +152,42 @@ export default function Hizmetlerimiz() {
                 <p className="text-gray-600">
                   Öğrencilerimizin sosyalleşebilecekleri ve dinlenebilecekleri geniş ortak alanlar bulunmaktadır. Bu
                   alanlar, uzun bir çalışma gününün ardından dinlenmek için idealdir.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md mb-4">
+                  <Image
+                    src="/images/kutuphane3.jpeg"
+                    alt="Kütüphane"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Kütüphane</h3>
+                <p className="text-gray-600">
+                  Kütüphanemiz, öğrencilerimizin ders çalışmaları ve araştırma yapmaları için ideal bir ortam
+                  sunmaktadır. Çeşitli kaynak kitaplar ve sessiz bir çalışma ortamı mevcuttur.
+                </p>
+              </div>
+
+              <div>
+                <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md mb-4">
+                  <Image
+                    src="/images/kutuphane2.jpeg"
+                    alt="Çalışma Alanı"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Çalışma Alanları</h3>
+                <p className="text-gray-600">
+                  Öğrencilerimizin bireysel veya grup halinde çalışabilecekleri özel çalışma alanları bulunmaktadır. Bu
+                  alanlar, akademik başarıyı desteklemek için tasarlanmıştır.
                 </p>
               </div>
             </div>
@@ -196,6 +233,47 @@ export default function Hizmetlerimiz() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
                   Dört Kişilik Oda
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/pic3.jpeg"
+                  alt="Oda Görünümü"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
+                  Oda Görünümü
+                </div>
+              </div>
+
+              <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/resim2.jpeg"
+                  alt="Oda Detayı"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
+                  Oda Detayı
+                </div>
+              </div>
+
+              <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/pic7.jpeg"
+                  alt="Çalışma Alanı"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
+                  Çalışma Alanı
                 </div>
               </div>
             </div>

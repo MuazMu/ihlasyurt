@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, ChurchIcon as Mosque, BookOpen, ShieldCheck, Utensils, Home } from "lucide-react"
 
 export default function Hakkimizda() {
   return (
@@ -63,67 +63,111 @@ export default function Hakkimizda() {
             </div>
           </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg md:order-last">
+              <Image
+                src="/images/yurt1.jpeg"
+                alt="İhlas Yurdu Binası"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="md:order-first">
+              <h2 className="text-2xl font-bold mb-6">Tesislerimiz</h2>
+              <p className="text-gray-600 mb-4">
+                İhlas Yurdu, öğrencilerimizin tüm ihtiyaçlarını karşılayacak modern tesislere sahiptir. Konforlu
+                odalarımız, geniş çalışma alanlarımız, ferah yemekhanemiz ve mescidimiz ile öğrencilerimize ev konforunu
+                sunuyoruz.
+              </p>
+              <p className="text-gray-600">
+                Yurdumuzda bulunan ortak alanlar, öğrencilerimizin sosyalleşmesine ve dinlenmesine olanak sağlarken,
+                çalışma salonlarımız ve kütüphanemiz akademik başarılarını desteklemektedir.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Neden İhlas Yurdu?</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Merkezi Konum</h3>
-                  <p className="text-gray-600">
-                    Üniversite kampüslerine ve şehir merkezine yakın, ulaşımı kolay bir konumda bulunmaktayız.
-                  </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <Home className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Merkezi Konum</h3>
+                </div>
+                <p className="text-gray-600">
+                  Üniversite kampüslerine ve şehir merkezine yakın, ulaşımı kolay bir konumda bulunmaktayız.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/yurt-new.jpeg" alt="Yurt Binası" fill className="object-cover" />
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Modern ve Konforlu Odalar</h3>
-                  <p className="text-gray-600">
-                    Tek, üç ve dört kişilik odalarımız modern mobilyalar ve özel çalışma alanları ile donatılmıştır.
-                  </p>
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <BookOpen className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Çalışma Ortamı</h3>
+                </div>
+                <p className="text-gray-600">
+                  Kütüphane ve çalışma salonlarımız ile öğrencilerimizin akademik başarılarını destekliyoruz.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/kutuphane3.jpeg" alt="Kütüphane" fill className="object-cover" />
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Güvenli Ortam</h3>
-                  <p className="text-gray-600">
-                    24 saat güvenlik personeli ve kamera sistemi ile öğrencilerimizin güvenliğini sağlıyoruz.
-                  </p>
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <Mosque className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Manevi Ortam</h3>
+                </div>
+                <p className="text-gray-600">
+                  Mescidimiz ve manevi etkinliklerimiz ile öğrencilerimizin manevi gelişimlerine katkı sağlıyoruz.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/mosque.png" alt="Mescit" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <ShieldCheck className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Güvenli Ortam</h3>
+                </div>
+                <p className="text-gray-600">
+                  24 saat güvenlik personeli ve kamera sistemi ile öğrencilerimizin güvenliğini sağlıyoruz.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/common-area.png" alt="Güvenli Ortam" fill className="object-cover" />
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Besleyici Yemekler</h3>
-                  <p className="text-gray-600">
-                    Uzman aşçılarımız tarafından hazırlanan besleyici ve lezzetli yemekler sunuyoruz.
-                  </p>
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <Utensils className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Besleyici Yemekler</h3>
+                </div>
+                <p className="text-gray-600">
+                  Uzman aşçılarımız tarafından hazırlanan besleyici ve lezzetli yemekler sunuyoruz.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/dining-hall.png" alt="Yemekhane" fill className="object-cover" />
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Çalışma Ortamı</h3>
-                  <p className="text-gray-600">
-                    Kütüphane ve çalışma salonlarımız ile öğrencilerimizin akademik başarılarını destekliyoruz.
-                  </p>
+              <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <CheckCircle className="w-6 h-6 text-blue-700 mr-3" />
+                  <h3 className="font-semibold">Modern Odalar</h3>
                 </div>
-              </div>
-
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Manevi Ortam</h3>
-                  <p className="text-gray-600">
-                    Mescidimiz ve manevi etkinliklerimiz ile öğrencilerimizin manevi gelişimlerine katkı sağlıyoruz.
-                  </p>
+                <p className="text-gray-600">
+                  Tek, üç ve dört kişilik odalarımız modern mobilyalar ve özel çalışma alanları ile donatılmıştır.
+                </p>
+                <div className="mt-4 h-40 relative rounded overflow-hidden">
+                  <Image src="/images/4-kisilik-oda.jpeg" alt="Modern Odalar" fill className="object-cover" />
                 </div>
               </div>
             </div>
