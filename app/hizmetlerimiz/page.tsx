@@ -253,7 +253,7 @@ export default function Hizmetlerimiz() {
 
               <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/resim2.jpeg"
+                  src="/images/oturma-salon.jpeg"
                   alt="Oda Detayı"
                   fill
                   className="object-cover"
@@ -266,7 +266,7 @@ export default function Hizmetlerimiz() {
 
               <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/pic7.jpeg"
+                  src="/images/kutuphane.jpeg"
                   alt="Çalışma Alanı"
                   fill
                   className="object-cover"

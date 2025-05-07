@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { CheckCircle, ChurchIcon as Mosque, BookOpen, ShieldCheck, Utensils, Home } from "lucide-react"
+import { CheckCircle, BookOpen, ShieldCheck, Utensils, Home } from "lucide-react"
+import { MosqueIcon } from "@/components/mosque-icon"
 
 export default function Hakkimizda() {
   return (
@@ -66,8 +67,8 @@ export default function Hakkimizda() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg md:order-last">
               <Image
-                src="/images/yurt1.jpeg"
-                alt="İhlas Yurdu Binası"
+                src="/images/giris-corridor.jpeg"
+                alt="İhlas Yurdu Tesisleri"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -119,7 +120,7 @@ export default function Hakkimizda() {
 
               <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                 <div className="flex items-center mb-4">
-                  <Mosque className="w-6 h-6 text-blue-700 mr-3" />
+                  <MosqueIcon className="w-6 h-6 text-blue-700 mr-3" />
                   <h3 className="font-semibold">Manevi Ortam</h3>
                 </div>
                 <p className="text-gray-600">
