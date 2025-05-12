@@ -65,7 +65,23 @@ export default function Iletisim() {
 
             <div className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold mb-6">İletişim Formu</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+                const response = await fetch('/api/send-form-email', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data),
+                });
+                if (response.ok) {
+                  alert('Mesajınız başarıyla gönderildi!');
+                  form.reset();
+                } else {
+                  alert('Bir hata oluştu, lütfen tekrar deneyin.');
+                }
+              }}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Adınız Soyadınız*

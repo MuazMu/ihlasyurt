@@ -13,7 +13,23 @@ export default function OnKayit() {
             2024-2025 Eğitim Öğretim yılı için ön kayıt formunu doldurarak yerinizi şimdiden ayırtın.
           </p>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={async (e) => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const response = await fetch('/api/send-form-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+            if (response.ok) {
+              alert('Başvurunuz başarıyla gönderildi!');
+              form.reset();
+            } else {
+              alert('Bir hata oluştu, lütfen tekrar deneyin.');
+            }
+          }}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
