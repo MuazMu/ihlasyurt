@@ -260,7 +260,7 @@ export default function Hizmetlerimiz() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
-                  Oda Detayı
+                  Ortak Alanlar
                 </div>
               </div>
 
@@ -273,7 +273,7 @@ export default function Hizmetlerimiz() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-2 text-center">
-                  Çalışma Alanı
+                  Kütüphane
                 </div>
               </div>
             </div>

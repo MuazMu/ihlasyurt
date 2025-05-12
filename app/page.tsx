@@ -127,7 +127,7 @@ export default function HomePage() {
       <FacilitySection
         title="Ortak Alanlar"
         description="Konforlu ortak alanlarımızda rahatlayın ve sosyalleşin. Bu alanlar, uzun bir çalışma gününün ardından dinlenmek için idealdir."
-        imageSrc="/images/oturma-salon-2.jpeg"
+        imageSrc="/images/common-area.png"
         icon={<Users className="w-6 h-6 text-blue-700" />}
         reverse={true}
       />
