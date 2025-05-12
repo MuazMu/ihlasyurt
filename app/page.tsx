@@ -10,7 +10,7 @@ import Link from "next/link"
 export default function HomePage() {
   const heroSlides = [
     {
-      image: "/images/entrance-group.jpeg",
+      image: "/images/oda1.jpg",
       title: "İhlas Yurdu",
       description: "Evinizden uzakta eviniz",
     },
@@ -20,7 +20,7 @@ export default function HomePage() {
       description: "Rahat ve huzurlu bir ortamda konaklama",
     },
     {
-      image: "/images/oturma-salon-2.jpeg",
+      image: "/images/common-area.png",
       title: "Sosyal Ortam",
       description: "Arkadaşlarınızla keyifli vakit geçirebileceğiniz alanlar",
     },
