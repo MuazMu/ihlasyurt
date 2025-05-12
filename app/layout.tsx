@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
+      <head>
+        <link rel="icon" href="/images/ihlas-logo.jpeg" type="image/jpeg" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
