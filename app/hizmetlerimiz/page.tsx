@@ -160,7 +160,7 @@ export default function Hizmetlerimiz() {
               <div>
                 <div className="relative h-64 w-full rounded-lg overflow-hidden shadow-md mb-4">
                   <Image
-                    src="/images/kutuphane3.jpeg"
+                    src="/images/kutuphane_son.jpg"
                     alt="Kütüphane"
                     fill
                     className="object-cover"
